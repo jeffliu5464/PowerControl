@@ -1,21 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PowerControl - a lightweight Ubuntu power management utility." />
   <title>PowerControl</title>
+
+  <script id="aclib" type="text/javascript" src="//acscdn.com/script/aclib.js"></script>
+  <script type="text/javascript">
+      aclib.runAutoTag({
+          zoneId: 'fs2wmrp8w4',
+      });
+  </script>
+
+  <style>
+    :root {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1f2937;
+      background: #f6f8fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #eef5ff 0%, #f8fafc 45%, #ffffff 100%);
+    }
+
+    .page {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 42px 24px 36px;
+    }
+
+    .icon {
+      width: 132px;
+      height: 132px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 44px;
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      margin: 14px auto 0;
+      max-width: 620px;
+      font-size: 19px;
+      line-height: 1.6;
+      color: #475569;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 28px;
+      margin-top: 24px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+      line-height: 1.9;
+    }
+
+    .note {
+      color: #64748b;
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 36px;
+      color: #64748b;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>PowerControl</h1>
-  <p>Ubuntu power management utility.</p>
+  <main class="page">
+    <section class="hero">
+      <img src="power-control.png" alt="PowerControl icon" class="icon" />
+      <h1>PowerControl</h1>
+      <p class="subtitle">
+        A lightweight power management utility for Ubuntu Linux,
+        designed to make common AC, battery, display, suspend and hibernate
+        settings easier to manage.
+      </p>
+    </section>
 
-  <h2>Features</h2>
-  <ul>
-    <li>AC / Battery idle timeout</li>
-    <li>Suspend / Hibernate control</li>
-    <li>Screen blank timeout</li>
-    <li>Power profile control</li>
-  </ul>
+    <section class="card">
+      <h2>Features</h2>
+      <ul>
+        <li>Configure AC idle timeout and action</li>
+        <li>Configure battery idle timeout and action</li>
+        <li>Set screen blank timeout</li>
+        <li>Manage system power profiles</li>
+        <li>View suspend memory mode</li>
+        <li>Check hibernate capability</li>
+        <li>Suspend or hibernate the system directly</li>
+      </ul>
+    </section>
 
-  <p>Available for Ubuntu Linux.</p>
+    <section class="card">
+      <h2>Platform</h2>
+      <p class="note">
+        PowerControl is developed for Ubuntu Linux. A Snap/App Center edition
+        is planned with a focus on safe, sandbox-compatible power management.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Privacy</h2>
+      <p class="note">
+        PowerControl does not require personal account information for its
+        core power-management features. The free edition may display
+        advertising supplied by third-party advertising services when online.
+      </p>
+    </section>
+
+    <footer>
+      PowerControl &mdash; Ubuntu Power Management Utility
+    </footer>
+  </main>
 </body>
 </html>
