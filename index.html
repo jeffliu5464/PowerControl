@@ -19,40 +19,31 @@
       color: #1f2937;
       background: #f6f8fb;
     }
-
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       background: linear-gradient(180deg, #eef5ff 0%, #f8fafc 45%, #ffffff 100%);
     }
-
     .page {
       max-width: 920px;
       margin: 0 auto;
       padding: 48px 24px 64px;
     }
-
     .hero {
       text-align: center;
       padding: 42px 24px 36px;
     }
-
     .icon {
       width: 132px;
       height: 132px;
       object-fit: contain;
       margin-bottom: 20px;
     }
-
     h1 {
       margin: 0;
       font-size: 44px;
       line-height: 1.1;
     }
-
     .subtitle {
       margin: 14px auto 0;
       max-width: 620px;
@@ -60,7 +51,32 @@
       line-height: 1.6;
       color: #475569;
     }
-
+    .download-row {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+    .button {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid #2563eb;
+      background: #2563eb;
+      color: white;
+    }
+    .button.secondary {
+      background: white;
+      color: #2563eb;
+    }
+    .version {
+      margin-top: 14px;
+      color: #64748b;
+      font-size: 14px;
+    }
     .card {
       background: rgba(255, 255, 255, 0.95);
       border: 1px solid #e2e8f0;
@@ -69,29 +85,31 @@
       margin-top: 24px;
       box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
     }
-
     h2 {
       margin-top: 0;
       font-size: 24px;
     }
-
     ul {
       margin: 0;
       padding-left: 22px;
       line-height: 1.9;
     }
-
     .note {
       color: #64748b;
       line-height: 1.7;
     }
-
+    code {
+      background: #eef2f7;
+      border-radius: 6px;
+      padding: 2px 6px;
+    }
     footer {
       text-align: center;
       margin-top: 36px;
       color: #64748b;
       font-size: 14px;
     }
+    a { color: #2563eb; }
   </style>
 </head>
 
@@ -100,11 +118,28 @@
     <section class="hero">
       <img src="power-control.png" alt="PowerControl icon" class="icon" />
       <h1>PowerControl</h1>
+
       <p class="subtitle">
         A lightweight power management utility for Ubuntu Linux,
         designed to make common AC, battery, display, suspend and hibernate
         settings easier to manage.
       </p>
+
+      <div class="download-row">
+        <a class="button"
+           href="https://github.com/jeffliu5464/PowerControl/releases">
+          Download PowerControl
+        </a>
+
+        <a class="button secondary"
+           href="https://github.com/jeffliu5464/PowerControl">
+          View on GitHub
+        </a>
+      </div>
+
+      <div class="version">
+        Current desktop build: PowerControl 1.0.4 &middot; Ubuntu Linux &middot; amd64
+      </div>
     </section>
 
     <section class="card">
@@ -121,10 +156,23 @@
     </section>
 
     <section class="card">
+      <h2>Installation</h2>
+      <p class="note">
+        Download the latest Ubuntu package from the GitHub Releases page.
+        For a downloaded Debian package, installation can typically be done with:
+      </p>
+      <p><code>sudo apt install ./power-control_1.0.4_amd64.deb</code></p>
+      <p class="note">
+        A Snap / Ubuntu App Center edition is also planned.
+      </p>
+    </section>
+
+    <section class="card">
       <h2>Platform</h2>
       <p class="note">
-        PowerControl is developed for Ubuntu Linux. A Snap/App Center edition
-        is planned with a focus on safe, sandbox-compatible power management.
+        PowerControl is developed for Ubuntu Linux on amd64 systems.
+        The application focuses on common desktop power-management settings
+        while keeping system-level operations explicit and user-controlled.
       </p>
     </section>
 
